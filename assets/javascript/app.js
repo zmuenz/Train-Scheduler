@@ -35,6 +35,11 @@ $("#submit").on("click", function (event) {
         dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
 
+    $("#train-name").val("");
+    $("#destination").val("");
+    $("#train-time").val("");
+    $("#train-frequency").val("");
+
 });
 
 database.ref().on("child_added", function (snapshot) {
